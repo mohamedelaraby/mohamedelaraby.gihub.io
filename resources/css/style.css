@@ -285,3 +285,41 @@ header{
 /*-----------------------------------------------------------------------------------*/
 /*----------[ How-it-works SECTION]-------------*/
 /*-----------------------------------------------------------------------------------*/
+
+.steps-box{
+    margin-top: 3rem;
+
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+
+}
+.app-screen{
+    width: 40%;
+
+}
+
+.works-step{
+    margin-bottom: 5rem;
+
+}
+.works-step div{
+    color: #e67e22;
+    border: 0.2rem solid #e67e22;
+    display:inline-block;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    padding:0.5rem;
+    float: left;
+    
+
+}
