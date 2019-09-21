@@ -1,0 +1,287 @@
+/*
+[  author ] ;- Muhammed alaraby
+[  Date   ] ;- 17/9/19
+[  Info   ] ;- Home page style
+
+*/
+
+
+/*----------------------------------------------------
+-------[ BASIC SETUP ]-------
+-------------------------------------------------------*/
+*{
+    box-sizing:border-box;
+    padding: 0%;
+    margin: 0%;
+    /*border: 0.1rem solid #95a5a6;*/
+}
+
+
+html{
+    font-size: 62.50%;
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*[ body style ]*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+/*----------------------------------------------------
+-------[ REUSABEL COMPONENTS]---------
+------------------------------------------------------*/
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+
+}
+
+/*[ Icons ]*/
+.icon-big{
+    display: block;
+    color: #e67e22;
+    font-size: 320%;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+/*[ Sections ]*/
+section{
+    padding: 8rem 0rem;
+}
+
+/*[ Paragraphs ]*/
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+
+}
+   
+/*[ Headings ]*/ 
+h1, h2, h3{   
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+h1 {
+    margin-top: 0rem;
+    margin-bottom:2rem;
+    color: #fff;
+    font-size: 200%;
+    word-spacing:0.4rem;
+    letter-spacing: 0.1rem;
+
+}
+
+h2{
+    font-size: 180%;
+    margin-bottom: 3rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 1.5rem;
+}
+
+h2:after{
+    display: block;
+    height:0.2rem;
+    background-color: #e67e22;
+    content: " ";
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+}
+
+/*[ Buttons]*/ 
+.btn:visited,
+.btn:link{
+    display: inline-block;
+    padding:1rem 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 20rem;
+    text-align: center;
+    border: 0.1rem solid #e67e22;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #b05d14;
+    border: 0.1rem solid #b05d14;
+    transition: background-color 0.5s,
+                color 0.5s,
+                boder 0.5s;
+
+}
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 1.2rem;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color:#e67e22;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    background-color: #e67e22;
+
+
+}
+
+
+/*-----------------------------------------------
+--------[ Header style]---
+-------------------------------------------------*/
+header{
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.575)), url(./img/hero.jpg);
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 114rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%)
+}
+
+
+
+/*[ header logo picture ]*/
+.logo{
+    height: 10rem;
+    width: auto;
+    float: left;
+    margin-top: 2.5rem;
+}
+
+/*[ header nav ]*/
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 6.5rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 0.8rem 0rem;
+    text-decoration: none;
+    font-size: 90%;
+    color:#fff;
+    text-transform: uppercase;  
+    border-bottom: 0.2rem solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 0.2rem solid #e67e22;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*----------[ Features SECTION]-------------*/
+/*-----------------------------------------------------------------------------------*/
+
+.features-section .long-copy {
+    margin-bottom: 4rem;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*----------[ Meals SECTION]-------------*/
+/*-----------------------------------------------------------------------------------*/
+.meals-section{
+    padding: 0;
+
+}
+.meals-showcase{
+    list-style:none;
+    width:100%;
+
+}
+
+.meals-showcase li {
+    display:block;
+    float:left;
+    width: 25%;
+
+}
+
+
+.meals-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.meals-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+
+.meals-photo img:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*----------[ How-it-works SECTION]-------------*/
+/*-----------------------------------------------------------------------------------*/
