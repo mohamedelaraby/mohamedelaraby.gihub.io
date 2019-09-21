@@ -32,7 +32,15 @@ body{
     font-size: 2rem;
 }
 
+.clearfix{zoom:1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 
+}
 
 /*----------------------------------------------------
 -------[ REUSABEL COMPONENTS]---------
@@ -179,6 +187,7 @@ header{
    background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.575)), url(./img/hero.jpg);
 }
 
+
 .hero-text-box{
     position: absolute;
     width: 114rem;
@@ -287,18 +296,19 @@ header{
 /*-----------------------------------------------------------------------------------*/
 
 .steps-box{
-    margin-top: 3rem;
-
+    background-color: #fcf3f3;
 }
 
 .steps-box:first-child{
     text-align: right;
     padding-right:3%;
+    margin-top: 3rem;
 
 }
 
 .steps-box:last-child{
     padding-left:3%;
+    margin-top: 7rem;
 
 }
 .app-screen{
@@ -310,16 +320,28 @@ header{
     margin-bottom: 5rem;
 
 }
+.works-step:last-of-type{
+    margin-bottom: 8rem;
+}
 .works-step div{
     color: #e67e22;
+    padding: 0.5rem;
     border: 0.2rem solid #e67e22;
-    display:inline-block;
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 5.5rem;
+    width: 5.5rem;
     text-align: center;
     padding:0.5rem;
     float: left;
+    font-size: 150%;
+    margin-right:2.5rem ;
+
     
+}
+
+.btn-app img {
+    height: 5rem;
+    width: auto;
+    margin-right: 1rem;
 
 }
