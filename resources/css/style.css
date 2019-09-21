@@ -69,6 +69,17 @@ body{
     
 }
 
+.icon-small{
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -0.4rem;
+
+}
 
 /*[ Sections ]*/
 section{
@@ -296,7 +307,7 @@ header{
 /*-----------------------------------------------------------------------------------*/
 
 .steps-section{
-    background-color: #fcf3f3;
+    background-color: #f4f4f4;
 }
 
 .steps-box:first-child{
@@ -345,3 +356,19 @@ header{
     margin-right: 1rem;
 
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*----------[ Cities SECTION]-------------*/
+/*-----------------------------------------------------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.city-feature{
+    margin-bottom: 0.5rem;
+
+}
+
