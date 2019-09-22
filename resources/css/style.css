@@ -193,14 +193,16 @@ a:link,
 a:visited{
     color: #e67e22;
     text-decoration: none;
-    padding-bottom: 0.2rem;
-    border-bottom: 0.1rem solid #e67e22;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem  solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
 
 }
 
 a:hover,
-a:active{color:#000;
-    border-bottom: 0.2rem solid #000;
+a:active{
+    color:#555;
+    border-bottom: 0.2rem solid transparent;
 
 }
 
@@ -367,6 +369,12 @@ header{
     
 }
 
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+    
+}
+
 .btn-app img {
     height: 5rem;
     width: auto;
@@ -374,9 +382,9 @@ header{
 
 }
 
-/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
 /*----------[ Cities SECTION]-------------*/
-/*-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 
 .box img{
     width: 100%;
