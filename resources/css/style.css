@@ -553,5 +553,5 @@ input[type=checked]{
 
 /*Vanish the border around the text input*/
 *:focus{
-    outline: none;
+    outline: 
 }
