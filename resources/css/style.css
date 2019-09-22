@@ -142,7 +142,8 @@ h2:after{
 
 /*[ Buttons]*/ 
 .btn:visited,
-.btn:link{
+.btn:link,
+input[type=submit]{
     display: inline-block;
     padding:1rem 3rem;
     font-weight: 300;
@@ -155,7 +156,9 @@ h2:after{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #b05d14;
     border: 0.1rem solid #b05d14;
     transition: background-color 0.5s,
@@ -166,12 +169,16 @@ h2:after{
 
 
 .btn-full:link,
-.btn-full:visited{
-    background-color: #e67e22;
+.btn-full:visited,
+input[type=submit]{
+    background-color: #ec903f;
     color: #fff;
     margin-right: 1.2rem;
 }
-
+.btn-full:hover,
+.btn-full:active{
+    border: 0.1rem solid #cf6d17;
+}
 
 .btn-ghost:link,
 .btn-ghost:visited{
@@ -454,15 +461,14 @@ cite img{
 .plans-section{
     width: 100%;
     background-color: #f4f4f4;
-    margin: 0 auto;
-
+    
     
 }
 
 .plan-box{
     background-color: #fff;
     border-radius: 0.9rem;
-    width: 100%;
+    width: 90%;
     margin-left: 5%;
     box-shadow: 0rem 0.2rem 0.2rem #efefef;
     
@@ -518,4 +524,34 @@ cite img{
 }
 
 
+/*-----------------------------------------------------------------------------*/
+/*----------[ Contact SECTION]-------------*/
+/*----------------------------------------------------------------------------*/
 
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #ccc;
+
+}
+textarea{
+    height: 10rem;
+    
+}
+input[type=checked]{
+    margin: 1rem 0.5rem 1rem 0rem;
+
+}
+
+/*Vanish the border around the text input*/
+*:focus{
+    outline: none;
+}
