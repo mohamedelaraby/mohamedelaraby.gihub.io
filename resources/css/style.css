@@ -215,6 +215,8 @@ header{
    background-size: cover;
    background-position: center;
    background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.575)), url(./img/hero.jpg);
+   background-attachment: fixed;
+
 }
 
 
@@ -397,3 +399,50 @@ header{
 
 }
 
+
+
+/*-----------------------------------------------------------------------------*/
+/*----------[ Testimonials SECTION]-------------*/
+/*----------------------------------------------------------------------------*/
+.testimonials-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.808)),
+                        url(./img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color:#e6e6e6;
+}
+
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 4rem;
+
+
+
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.3rem;
+
+    
+}
+cite{
+    display: block;
+    font-size: 90%;
+    margin-top: 2.5rem;
+}
+cite img{
+    height: 5.5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1rem;
+
+}
