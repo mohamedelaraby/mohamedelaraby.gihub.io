@@ -553,5 +553,135 @@ input[type=checked]{
 
 /*Vanish the border around the text input*/
 *:focus{
-    outline: 
+    outline:none; 
 }
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*----------[ FOOTER SECTION]-------------*/
+/*----------------------------------------------------------------------------*/
+
+footer{
+    background-color: #333;
+    padding: 5rem;
+    font-size: 80%;
+
+}
+.footer-nav,
+.social-links{
+    list-style: none;
+
+}
+
+.footer-nav{
+    float: left;
+}
+.social-links{
+    float: right; 
+    font-size: 180%; 
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.footer-nav:last-child,
+.social-links:last-child{
+    margin-right: 0rem ;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s, scale 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    text-decoration: none;
+    background-color: #555;
+    border-radius:2rem;
+    border: 0.1rem solid #888;
+    color: #ddd;
+
+}
+
+
+.facebook-icon,
+.twitter-icon,
+.pinterest-icon,
+.instagram-icon,
+.googleplus-icon{
+    transition: color 0.3s;
+}
+
+.facebook-icon:hover{
+    color:#3b5998;
+    transform: scale(1.18);
+}
+
+.twitter-icon:hover{
+    color: #1da1f2;
+    transform: scale(1.18);
+}
+
+.pinterest-icon:hover{
+    color: #cb2027;
+    transform: scale(1.18);
+
+}
+
+.instagram-icon:hover{
+    color: #517fa4;
+    transform: scale(1.18);
+
+}
+.googleplus-icon:hover{
+    color:  #ea4335;
+    transform: scale(1.18);
+
+}
+
+
+
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
