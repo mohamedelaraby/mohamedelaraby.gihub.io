@@ -10,7 +10,8 @@
 -------[ BASIC SETUP ]-------
 -------------------------------------------------------*/
 *{
-    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
     padding: 0%;
     margin: 0%;
     /*border: 0.1rem solid #95a5a6;*/
@@ -161,6 +162,9 @@ input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #b05d14;
     border: 0.1rem solid #b05d14;
+    -webkit-transition: background-color 0.5s,
+                color 0.5s,
+                boder 0.5s;
     transition: background-color 0.5s,
                 color 0.5s,
                 boder 0.5s;
@@ -202,6 +206,7 @@ a:visited{
     text-decoration: none;
     padding-bottom: 0.5rem;
     border-bottom: 0.2rem  solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 
 }
@@ -221,6 +226,7 @@ header{
    height: 100vh;
    background-size: cover;
    background-position: center;
+   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.582)),to(rgba(0, 0, 0, 0.575))), url(./img/hero.jpg);
    background-image: linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.575)), url(./img/hero.jpg);
    background-attachment: fixed;
 
@@ -232,7 +238,8 @@ header{
     width: 114rem;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -50%)
+    -webkit-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%)
 }
 
 
@@ -265,6 +272,7 @@ header{
     color:#fff;
     text-transform: uppercase;  
     border-bottom: 0.2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 
 }
@@ -318,13 +326,18 @@ header{
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 
 }
 
 .meals-photo img:hover{
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
     opacity: 0.9;
 
 }
@@ -412,6 +425,8 @@ header{
 /*----------[ Testimonials SECTION]-------------*/
 /*----------------------------------------------------------------------------*/
 .testimonials-section{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.829)),to(rgba(0, 0, 0, 0.808))),
+                        url(./img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.808)),
                         url(./img/back-customers.jpg);
     background-size: cover;
@@ -470,7 +485,8 @@ cite img{
     border-radius: 0.9rem;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0rem 0.2rem 0.2rem #efefef;
+    -webkit-box-shadow: 0rem 0.2rem 0.2rem #efefef;
+            box-shadow: 0rem 0.2rem 0.2rem #efefef;
     
 
 }
@@ -604,6 +620,7 @@ footer{
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s, scale 0.2s;
     transition: color 0.2s, scale 0.2s;
 }
 
@@ -623,33 +640,39 @@ footer{
 .pinterest-icon,
 .instagram-icon,
 .googleplus-icon{
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
 .facebook-icon:hover{
     color:#3b5998;
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
 }
 
 .twitter-icon:hover{
     color: #1da1f2;
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
 }
 
 .pinterest-icon:hover{
     color: #cb2027;
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
 
 }
 
 .instagram-icon:hover{
     color: #517fa4;
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
 
 }
 .googleplus-icon:hover{
     color:  #ea4335;
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
 
 }
 
